@@ -64,25 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // start the typing 
     typeWriter();
 
-    const contactForm = document.querySelector('#contact form');
-    if (contactForm) {
-        // create thank you message 
-        const thankYouMessage = document.createElement('div');
-        thankYouMessage.className = 'form-thank-you';
-        thankYouMessage.style.display = 'none';
-        thankYouMessage.innerHTML = '<h3>Thank you for your message!</h3><p>I\'ll get back to you as soon as possible.</p>';
-        contactForm.parentNode.appendChild(thankYouMessage);
-        
-        // Check URL 
-        if (window.location.search.includes('submitted=true')) {
-            contactForm.style.display = 'none';
-            document.querySelector('.form-thank-you').style.display = 'block';
-        }
-        
-        
-        contactForm.addEventListener('submit', function(event) {
-            
-        });
-    }
+ 
 
 });
