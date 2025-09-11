@@ -654,3 +654,31 @@ footer {
     
  
 }
+
+/* Responsive fix for "View More Projects" cards */
+@media screen and (max-width: 767px) {
+  .view-more-projects {
+    margin: 2rem 0 1.5rem 0 !important;
+    padding: 1.5rem 0 !important;
+  }
+
+  .more-projects-grid {
+    grid-template-columns: 1fr !important;   /* Single column */
+    gap: 1.2rem !important;
+  }
+
+  .more-project-card {
+    min-width: 0 !important;   /* Ensure no card tries to stay wide */
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .more-project-img {
+    height: 140px !important;
+  }
+
+  .more-project-content {
+    padding: 1rem !important;
+  }
+}
